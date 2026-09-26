@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-poetrydb",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "PoetryDB MCP.",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-547907b75a2f2a2a5680b892fe95d546a3bf5cb4508f4aafff6dcbd380d5f0fa",
-    "sourceCommit": "00c836ddeaecbdd581dcfb0fb1842efea104006e"
+    "sourceHash": "v1-8d618b1029a6f8fb821e86094e1418aa69b5bf8e87a5b78bd7b36c3cf37f3b7b",
+    "sourceCommit": "4d51421bd010ad9a322c2245b70b401604912eff"
   }
 }
