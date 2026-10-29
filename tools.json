@@ -1,0 +1,64 @@
+[
+  {
+    "name": "search_poems",
+    "description": "Search PoetryDB for poems by title or partial title (e.g., \"The Road Not Taken\"). Returns matching poems with full text, author, and line count. Note: searches titles only, not poem body text.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "author": {
+          "type": "string",
+          "description": "Author name or fragment, e.g. \"Dickinson\", \"Shakespeare\". Optional if title given."
+        },
+        "title": {
+          "type": "string",
+          "description": "Poem title or fragment, e.g. \"Hope\", \"Sonnet\". Optional if author given."
+        },
+        "limit": {
+          "type": "number",
+          "description": "Max poems to return (default 10, max 20)."
+        }
+      }
+    }
+  },
+  {
+    "name": "get_poem_lines",
+    "description": "Full-text search within poem lines on PoetryDB — finds any poem containing the given phrase in one of its lines. Returns full poem text (capped). Keyless.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "text": {
+          "type": "string",
+          "description": "Phrase to find inside any line of a poem, e.g. \"Nature\", \"the road not taken\"."
+        },
+        "limit": {
+          "type": "number",
+          "description": "Max poems to return (default 10, max 20)."
+        }
+      },
+      "required": [
+        "text"
+      ]
+    }
+  },
+  {
+    "name": "random_poems",
+    "description": "Fetch one or more random public-domain poems from PoetryDB. Returns full poem text (capped). Keyless.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "count": {
+          "type": "number",
+          "description": "Number of random poems to return (default 1, max 10)."
+        }
+      }
+    }
+  },
+  {
+    "name": "list_authors",
+    "description": "List all authors available in PoetryDB. Keyless.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {}
+    }
+  }
+]

@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-poetrydb",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "PoetryDB MCP.",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-poetrydb": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "poetrydb"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-poetrydb.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/poetrydb",
   "pipeworx": {
-    "sourceHash": "v1-8d618b1029a6f8fb821e86094e1418aa69b5bf8e87a5b78bd7b36c3cf37f3b7b",
-    "sourceCommit": "4d51421bd010ad9a322c2245b70b401604912eff"
+    "mode": "gateway",
+    "slug": "poetrydb",
+    "gatewaySlug": "poetrydb",
+    "sourceHash": "v1-b6c0d7f8ec88a62c41978c7e6938ffe3e23e3172aed93147a4d81cf9a9a09d0d",
+    "sourceCommit": "6bae4cfa7b6a73bbe014dc8820a19c80c842b21e"
   }
 }
