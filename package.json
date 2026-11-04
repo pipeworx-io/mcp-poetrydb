@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-poetrydb",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "PoetryDB MCP.",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "poetrydb",
     "gatewaySlug": "poetrydb",
-    "sourceHash": "v1-b6c0d7f8ec88a62c41978c7e6938ffe3e23e3172aed93147a4d81cf9a9a09d0d",
-    "sourceCommit": "6bae4cfa7b6a73bbe014dc8820a19c80c842b21e"
+    "sourceHash": "v1-bdce0ff4f2ddd995573cfaad9c2cff28b13d0cf69da5351068ba6e8f27971cc0",
+    "sourceCommit": "243a06a6ca2d3b6075325f3b66a1468d0a2eb603"
   }
 }
